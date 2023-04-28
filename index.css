@@ -200,10 +200,7 @@ header {
     display: none;
     padding: 15px;
     flex-wrap: wrap;
-    gap: 5px;
-}
-.work-list--wrapper.active {
-    display: flex;
+    gap: 15px;
 }
 .work-list--wrapper img {
     height: 80px;

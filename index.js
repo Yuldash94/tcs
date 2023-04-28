@@ -18,6 +18,7 @@
         counter++
         sliderBtnClick(counter)
     }
+
     previousSlideBtn.onclick = () => {
         counter <= 0 ? counter = slides.length : null
         counter--
@@ -52,24 +53,30 @@
             sampleList.style.display = 'none'
         }
     }
+
     galleryBtn.onclick = function(e) {
         navBtnClick(galleryBtn, galleryList)
     }
+
     sampleBtn.onclick = function(e) {
         navBtnClick(sampleBtn, sampleList)
     }
+
     backgroundBtn.onclick = function(e) {
         navBtnClick(backgroundBtn, backgroundList)
     }
+
     // инпуты изображений для 3-х вкладок
     const inputGallery = document.getElementById('gallery--img')
     inputGallery.onchange = function() {
         handleFileSelect(inputGallery, galleryList, 'gallery-img')
     }
+
     const inputSample = document.getElementById('sample--img')
     inputSample.onchange = function() {
         handleFileSelect(inputSample, sampleList, 'sample-img')
     }
+    
     const inputBackground = document.getElementById('background--img')
     inputBackground.onchange = function() {
         handleFileSelect(inputBackground, backgroundList, 'background-img')
