@@ -202,6 +202,9 @@ header {
     flex-wrap: wrap;
     gap: 5px;
 }
+.work-list--wrapper.active {
+    display: flex;
+}
 .work-list--wrapper img {
     height: 80px;
     width: auto;
